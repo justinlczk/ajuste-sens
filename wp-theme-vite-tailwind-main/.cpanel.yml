@@ -1,8 +1,0 @@
-deployment:
-  tasks:
-    - name: Installer les dépendances
-      command: npm install --prefix wp-theme-vite-tailwind-main
-    - name: Construire le projet
-      command: npm run build --prefix wp-theme-vite-tailwind-main
-    - name: Déployer les fichiers
-      command: /bin/cp -R wp-theme-vite-tailwind-main/dist/* /home/mage2133/public_html/wp-content/themes/wp-theme-vite-tailwind-main/
